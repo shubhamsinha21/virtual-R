@@ -8,3 +8,15 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+@layer base {
+  p {
+    @apply text-gray-600 text-sm tracking-tight;
+  }
+  h1 {
+    @apply text-white tracking-wide text-5xl;
+  }
+  h2 {
+    @apply text-white tracking-wide text-4xl;
+  }
+}

@@ -1,20 +1,16 @@
-import {
-  Navbar,
-  Hero,
-  Features,
-  Pricing,
-  Testimonials,
-  Footer,
-} from "./structure";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Workflow from "./components/Workflow";
+
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
       <Features />
-      <Pricing />
-      <Testimonials />
-      <Footer />
+      <div className="bg-gray-600 bg-opacity-50 p-[0.5px] w-full mt-40"></div>
+      <Workflow />
     </>
   );
 }

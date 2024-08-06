@@ -4,7 +4,10 @@ import { checklistItems } from "../constants";
 
 const Workflow = () => {
   return (
-    <div className="mx-auto px-6 max-w-7xl space-y-20 pt-12 lg:pt-20">
+    <div
+      id="workflow"
+      className="mx-auto px-6 max-w-7xl space-y-20 pt-12 lg:pt-20"
+    >
       <h2
         className="font-semibold text-center text-5xl lg:text-5xl
          text-white tracking-wider leading-normal"
@@ -18,7 +21,7 @@ const Workflow = () => {
         <img className="w-[600px] lg:w-[50%]" src={codeImg} alt="codeImg" />
         <ul className="mx-10">
           {checklistItems.map((listItems) => (
-            <li className="flex gap-6 mb-8">
+            <li className="flex gap-6 mb-8" key={listItems.title}>
               <CheckCircle2 color="#FFB300" size={36} />
               <div className="flex flex-col gap-4">
                 <h4 className="text-lg lg:text-xl tracking-wide font-semibold">

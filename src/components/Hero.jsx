@@ -3,7 +3,7 @@ import video2 from "../assets/video2.mp4";
 
 const Hero = () => {
   return (
-    <main className="mx-auto px-6 max-w-7xl pt-12 lg:pt-20">
+    <main id="home" className="mx-auto px-6 max-w-7xl pt-12 lg:pt-20">
       <div className="flex justify-center-items-center flex-col gap-12 lg:gap-20">
         <h1
           className="font-semibold text-center text-5xl lg:text-6xl
@@ -34,13 +34,15 @@ const Hero = () => {
         <div className="mx-auto space-x-8">
           <button
             className="bg-amber-600 p-3 w-fit mx-auto rounded-md
-             text-white hover:bg-black font-medium"
+             text-white hover:bg-black font-medium transition duration-300"
           >
             Start for free
           </button>
           <button
             className="bg-lack p-3 w-fit mx-auto rounded-md
-             text-white hover:text-black hover:bg-white border font-medium"
+             text-white hover:text-black hover:bg-white border font-medium
+             transition duration-300
+             "
           >
             Documentation
           </button>
@@ -50,7 +52,9 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className=" w-80 h-fit lg:w-[600px] rounded-md border cursor-pointer border-amber-600 shadow-lg hover:translate-y-2 shadow-amber-600  "
+            className="transition duration-300 w-80 h-fit lg:w-[600px] 
+            rounded-md border cursor-pointer border-amber-600 
+            shadow-lg shadow-amber-600  "
           >
             <source src={video1} type="video/mp4" />
             Your browser does not support the video tag
@@ -59,7 +63,9 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className=" w-80 h-fit lg:w-[600px] rounded-md border cursor-pointer border-amber-600 shadow-lg hover:translate-y-2 shadow-amber-600  "
+            className="transition duration-300 w-80 h-fit 
+            lg:w-[600px] rounded-md border cursor-pointer
+             border-amber-600 shadow-lg shadow-amber-600  "
           >
             <source src={video2} type="video/mp4" />
             Your browser does not support the video tag

@@ -9,10 +9,10 @@ function Navbar({ signIn, setSignIn }) {
     setToggle(!toggle);
   };
   return (
-    <header className="w-full sticky top-0 backdrop-blur-lg z-50 scroll-smooth">
+    <header className="w-full top-0 backdrop-blur-lg z-50 scroll-smooth fixed">
       <nav
         className=" flex lg:justify-around justify-between shadow-amber-500 shadow-sm 
-      items-center border-b border-gray-600  border-opacity-50 px-2 h-16"
+      items-center border-b border-gray-600  border-opacity-50 px-2 h-20"
       >
         <div className="flex items-center gap-6">
           <img className="w-10 h-10" src={logo} alt="logo" />
@@ -42,7 +42,6 @@ function Navbar({ signIn, setSignIn }) {
             Sign In
           </a>
           <a
-            onClick={() => setSignIn(!signIn)}
             href="#createAccount"
             className="bg-amber-600 p-2 w-fit mx-auto rounded-md
              text-white hover:bg-black font-medium"
@@ -72,7 +71,6 @@ function Navbar({ signIn, setSignIn }) {
           </ul>
           <div className=" flex flex-col gap-6">
             <a
-              onClick={() => setSignIn(!signIn)}
               href="#signIn"
               className="bg-amber-600 p-2 w-fit mx-auto rounded-md
              text-white hover:bg-black font-medium"
@@ -80,7 +78,6 @@ function Navbar({ signIn, setSignIn }) {
               Sign In
             </a>
             <a
-              onClick={() => setSignIn(!signIn)}
               href="#createAccount"
               className="bg-amber-600 p-2 w-fit mx-auto rounded-md
              text-white hover:bg-black font-medium"

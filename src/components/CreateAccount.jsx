@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CreateAccount = () => {
   const [submit, setSubmit] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmit();
   };

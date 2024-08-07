@@ -3,7 +3,7 @@ import video2 from "../assets/video2.mp4";
 
 const Hero = () => {
   return (
-    <main id="home" className="mx-auto px-6 max-w-7xl pt-12 lg:pt-20">
+    <main id="home" className="mx-auto px-6 max-w-7xl pt-12 lg:pt-20 mt-10">
       <div className="flex justify-center-items-center flex-col gap-12 lg:gap-20">
         <h1
           className="font-semibold text-center text-5xl max-sm:text-3xl

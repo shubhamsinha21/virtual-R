@@ -12,7 +12,7 @@ const Features = () => {
       </p>
 
       <h2
-        className="font-semibold text-center text-5xl lg:text-5xl
+        className="font-semibold text-center text-5xl max-sm:text-3xl
          text-white tracking-wider leading-normal"
       >
         Easily build{" "}
@@ -24,16 +24,16 @@ const Features = () => {
         {features.map((feature) => (
           <div
             key={feature.text}
-            className="w-96 h-60 lg:w-[400px] lg:h-[260px]  cursor-pointer border border-amber-800 mx-auto 
+            className="w-96 h-60 max-sm:h-72 lg:w-[400px] lg:h-[360px]  cursor-pointer border border-amber-800 mx-auto 
           shadow-md shadow-amber-600 hover:bg-gradient-to-tr from-amber-500 to-amber-800 
-        group hover:translate-y-2 transition duration-300
+        group hover:translate-y-2 transition duration-300 
           "
           >
             <div className="flex flex-col gap-12 p-4">
-              <h4 className="text-lg text-amber-600 drop-shadow-lg group-hover:text-white">
+              <h4 className="text-lg max-sm:text-md text-amber-600 drop-shadow-lg group-hover:text-white">
                 {feature.text}
               </h4>
-              <p className="group-hover:text-white text-gray-600 ">
+              <p className="group-hover:text-white text-gray-600 max-sm:text-sm ">
                 {feature.description}
               </p>
             </div>

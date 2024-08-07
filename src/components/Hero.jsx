@@ -6,8 +6,8 @@ const Hero = () => {
     <main id="home" className="mx-auto px-6 max-w-7xl pt-12 lg:pt-20">
       <div className="flex justify-center-items-center flex-col gap-12 lg:gap-20">
         <h1
-          className="font-semibold text-center text-5xl lg:text-6xl
-         text-white tracking-wide leading-normal"
+          className="font-semibold text-center text-5xl max-sm:text-3xl
+         text-white tracking-wide leading-normal max-sm:leading-relaxed"
         >
           <span className="border-b border-amber-600">
             Virtual<span className="text-amber-700">R</span>
@@ -31,7 +31,7 @@ const Hero = () => {
           </span>{" "}
           imagination into impressive reality
         </p>
-        <div className="mx-auto space-x-8">
+        <div className="mx-auto space-x-8 flex flex-wrap gap-8 justify-center items-center">
           <button
             className="bg-amber-600 p-3 w-fit mx-auto rounded-md
              text-white hover:bg-black font-medium transition duration-300"
@@ -47,12 +47,12 @@ const Hero = () => {
             Documentation
           </button>
         </div>
-        <div className=" flex mx-auto gap-10 flex-col md:flex-row ">
+        <div className=" flex justify-center mx-10 items-center gap-6 flex-col lg:flex-row ">
           <video
             autoPlay
             loop
             muted
-            className="transition duration-300 w-80 h-fit lg:w-[600px] 
+            className="transition duration-300 w-[500px] h-fit max-lg:w-[420px] 
             rounded-md border cursor-pointer border-amber-600 
             shadow-lg shadow-amber-600  "
           >
@@ -63,8 +63,8 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className="transition duration-300 w-80 h-fit 
-            lg:w-[600px] rounded-md border cursor-pointer
+            className="transition duration-300 h-fit 
+            max-lg:w-[420px] w-[500px] rounded-md border cursor-pointer
              border-amber-600 shadow-lg shadow-amber-600  "
           >
             <source src={video2} type="video/mp4" />

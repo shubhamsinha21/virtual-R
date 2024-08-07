@@ -11,9 +11,9 @@ const CreateAccount = () => {
     <form
       id="createAccount"
       onSubmit={handleSubmit}
-      className=" max-sm:max-w-sm md:max-w-md lg:max-w-lg h-[500px] flex flex-col mx-auto border
+      className=" max-sm:w-[280px] md:max-w-md lg:max-w-lg h-[500px] flex flex-col mx-auto border
    border-amber-600 rounded-md p-6 mt-28
-   shadow-md shadow-orange-500
+   shadow-md shadow-orange-500 max-sm:mb-48
    "
     >
       <h4 className="text-center text-2xl font-medium mb-20">
@@ -23,43 +23,43 @@ const CreateAccount = () => {
         </span>
       </h4>
       <div className="flex flex-col gap-8 items-center justify-evenly">
-        <div className="flex items-center gap-3 ">
-          <label className="text-lg mr-5">Name</label>
+        <div className="flex flex-wrap items-center gap-3 ">
+          <label className="text-lg max-sm:text-md mr-5">Name</label>
           <input
-            className="w-64 p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
+            className="w-64 max-sm:w-48 p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
             type="text"
             placeholder="Your first name .."
           />
         </div>
 
-        <div className="flex items-center gap-3">
-          <label className="text-lg mr-5"> Email</label>
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="text-lg mr-5 max-sm:text-md"> Email</label>
           <input
-            className="w-64 p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
+            className="w-64 max-sm:w-48  p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
             type="text"
             placeholder="1234@gmail.com"
           />
         </div>
 
-        <div className="flex items-center gap-3">
-          <label className="text-lg"> Contact </label>
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="text-lg max-sm:text-md"> Contact </label>
           <input
-            className="w-64 p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
+            className="w-64 max-sm:w-48 p-2 border border-amber-500 outline-none rounded-md hover:border-amber-700"
             type="number"
             placeholder="1234@gmail.com"
           />
         </div>
 
-        <div className="flex gap-8 mt-12 w-full">
+        <div className="flex max-sm:flex-col flex-row gap-8 mt-12 w-96 h-12">
           <button
             onClick={submit}
-            className="bg-amber-600 p-2 w-fit mx-auto rounded-md
+            className="bg-amber-600 p-2 w-36 mx-auto rounded-md
          text-white hover:bg-black font-medium"
           >
             Sign In
           </button>
           <button
-            className="bg-amber-600 p-2 w-fit mx-auto rounded-md
+            className="bg-amber-600 p-2 w-36 mx-auto rounded-md
          text-white hover:bg-black font-medium"
           >
             Create account

@@ -9,7 +9,7 @@ const Workflow = () => {
       className="mx-auto px-6 max-w-7xl space-y-20 pt-12 lg:pt-20"
     >
       <h2
-        className="font-semibold text-center text-5xl lg:text-5xl
+        className="font-semibold text-center text-5xl max-sm:text-2xl
          text-white tracking-wider leading-normal"
       >
         Accelerate Your{" "}

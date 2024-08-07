@@ -13,7 +13,7 @@ function App() {
   const [signIn, setSignIn] = useState(true);
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar signIn={signIn} setSignIn={setSignIn} />
       <Hero />
       <Features />
@@ -28,7 +28,7 @@ function App() {
       )}
       <div className="bg-gray-600 bg-opacity-50 p-[0.5px] w-full mt-20 "></div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -7,7 +7,7 @@ const Testimonials = () => {
       className="mx-auto px-6 max-w-7xl space-y-20 pt-12 lg:pt-36"
     >
       <h2
-        className="font-semibold text-center text-5xl lg:text-5xl
+        className="font-semibold text-center text-5xl max-sm:text-3xl
          text-white tracking-wider leading-normal"
       >
         What people are saying
@@ -22,7 +22,7 @@ const Testimonials = () => {
            hover:border-amber-700 cursor-pointer max-lg:max-w-96 mx-auto
            "
           >
-            <p className="text-md lg:text-lg tracking-wide text-white">
+            <p className="text-md max-sm:text-sm tracking-wide text-white">
               {testimonial.text}
             </p>
             <div className="flex gap-4 items-center">
